@@ -1,0 +1,25 @@
+# Datos y visualización
+numpy
+pandas
+matplotlib
+seaborn
+
+# Ingeniería de características y modelado
+scikit-learn
+feature-engine
+
+# Utilidades del paquete proyecto_pd (config.py)
+python-dotenv
+loguru
+tqdm
+pyyaml
+
+# Pruebas y estilo de código (PEP 8)
+pytest
+ruff
+
+# Kernel para ejecutar los notebooks
+ipykernel
+
+# Paquete local del proyecto (editable)
+-e .

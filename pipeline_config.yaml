@@ -1,0 +1,38 @@
+# Configuración del pipeline de modelado - House Prices
+# Features seleccionadas en notebooks/1.0-de-analisis_exploratorio.ipynb (sección 8):
+# top 10 de cada grupo según su relación con SalePrice.
+
+MODEL_FEATURES:
+  # Continuas (top 10 por |r| de Pearson)
+  - GrLivArea
+  - GarageArea
+  - TotalBsmtSF
+  - 1stFlrSF
+  - YearBuilt
+  - YearRemodAdd
+  - GarageYrBlt
+  - MasVnrArea
+  - BsmtFinSF1
+  - LotFrontage
+  # Discretas (top 10 por razón de correlación η)
+  - OverallQual
+  - GarageCars
+  - FullBath
+  - TotRmsAbvGrd
+  - MSSubClass
+  - Fireplaces
+  - OverallCond
+  - HalfBath
+  - BedroomAbvGr
+  - BsmtFullBath
+  # Categóricas (top 10 por razón de correlación η)
+  - Neighborhood
+  - ExterQual
+  - BsmtQual
+  - KitchenQual
+  - GarageFinish
+  - FireplaceQu
+  - Foundation
+  - GarageType
+  - BsmtFinType1
+  - HeatingQC
