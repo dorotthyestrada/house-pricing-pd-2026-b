@@ -7,6 +7,7 @@ seaborn
 # Ingeniería de características y modelado
 scikit-learn
 feature-engine
+mlflow
 
 # Utilidades del paquete proyecto_pd (config.py)
 python-dotenv
