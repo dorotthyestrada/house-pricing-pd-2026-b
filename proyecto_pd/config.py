@@ -21,6 +21,12 @@ MODELS_DIR = PROJ_ROOT / "models"
 REPORTS_DIR = PROJ_ROOT / "reports"
 FIGURES_DIR = REPORTS_DIR / "figures"
 
+# MLflow: tracking y Model Registry locales (SQLite + artefactos en mlruns/)
+MLFLOW_TRACKING_URI = f"sqlite:///{(PROJ_ROOT / 'mlflow.db').as_posix()}"
+MLFLOW_ARTIFACTS_DIR = PROJ_ROOT / "mlruns"
+MLFLOW_EXPERIMENT = "house_pricing"
+MLFLOW_MODELO_REGISTRADO = "house_pricing"
+
 # If tqdm is installed, configure loguru with tqdm.write
 # https://github.com/Delgan/loguru/issues/135
 try:
